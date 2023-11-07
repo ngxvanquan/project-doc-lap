@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+    height: 10000px;
+}
+
+/* Common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 68px;
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16; /* 116.129% */
+}
+
+.heading.lv2 {
+    font-size: 4.2rem;
+    line-height: 1.33; /* 133.333% */
+}
+
+.desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    background: #fff;
+    padding-top: 52px;
+    top: -52px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-bar {
+    margin-left: auto;
+}
+
+.header .nav-bar .list {
+    display: flex;
+    gap: 39px;
+}
+
+.header .nav-bar .item a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 0;
+}
+
+.header .nav-bar .item a.active {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .nav-bar .item a:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .sign-in-up {
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .sign-in-btn {
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 0;
+}
+
+.header .sign-up-btn {
+    width: 108px;
+    height: 48px;
+    display: inline-block;
+    color: #1ebfc1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+    margin-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero */
+.main .hero .body {
+    display: flex;
+    align-items: center;
+    padding-top: 62px;
+}
+
+.main .hero .info {
+    width: 40%;
+}
+
+.main .hero .info .desc:first-child {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main .hero .info .heading {
+    margin-top: 18px;
+}
+
+.main .hero .info .desc:nth-of-type(2) {
+    margin-top: 46px;
+    width: 374px;
+    line-height: 1.78; /* 177.778% */
+}
+
+.main .hero .info .cta {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 52px;
+}
+
+.main .hero .info .video {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .hero .media-block {
+    margin-left: auto;
+    width: 49%;
+    position: relative;
+    background: #e0f7f6;
+}
+
+.main .hero .img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.main .media-block .card {
+    position: absolute;
+}
+
+.main .media-block .card:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    width: 157px;
+    height: 75px;
+    padding: 17px 25px 18px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    top: 149px;
+    left: -40px;
+}
+
+.main .media-block .card:nth-of-type(1) .book-icon {
+    position: relative;
+    background: #ff8282;
+    width: 36px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.main .media-block .card:nth-of-type(1) .book-icon::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 2px;
+    bottom: 8px;
+    left: 4px;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+}
+
+.main .media-block .card:nth-of-type(1) .value {
+    width: 55px;
+    color: #0d1111;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 16px;
+}
+
+.main .media-block .card:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    width: 124px;
+    height: 132px;
+    padding: 16px 25px 23px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    bottom: 46px;
+    left: -65px;
+}
+
+.main .media-block .card:nth-of-type(2) .label {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
