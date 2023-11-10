@@ -654,3 +654,23 @@ a {
     bottom: 29px;
     right: 32px;
 }
+
+/* CTA */
+.main .cta {
+    padding: 76px 0 88px;
+    margin-top: 100px;
+    background: #def6f5;
+}
+
+.main .cta .body {
+    display: flex;
+    align-items: center;
+}
+
+.main .cta .info .desc {
+    margin-top: 18px;
+}
+
+.main .cta .cta-btn {
+    margin-left: 410px;
+}
