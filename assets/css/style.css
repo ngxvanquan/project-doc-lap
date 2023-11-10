@@ -527,5 +527,130 @@ a {
     font-weight: 700;
 }
 
-.main .stats .desc {
+/* FeedBack */
+.main .feedback {
+    padding: 30px;
+    margin-top: 204px;
+}
+
+.main .feedback .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .feedback .info {
+    width: 36%;
+}
+
+.main .feedback .content {
+    position: relative;
+}
+
+.main .feedback .content blockquote {
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.main .feedback .content .open-quotes {
+    position: absolute;
+    left: 0;
+    top: -27px;
+}
+
+.main .feedback .title {
+    position: relative;
+    color: #767e7e;
+    font-size: 1.6rem;
+    line-height: normal;
+    margin-top: 33px;
+}
+
+.main .feedback .title b {
+    color: #070707;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 33px;
+    margin-left: 13px;
+}
+
+.main .feedback .title::before {
+    content: "";
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .feedback .controls {
+    display: flex;
+    gap: 30px;
+    margin-top: 52px;
+}
+
+.main .feedback .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #2ac9bf;
+    border: none;
+    cursor: pointer;
+}
+
+.main .feedback .img-block {
+    width: 58%;
+    position: relative;
+    height: 481px;
+}
+
+.main .feedback .img-block .avatar {
+    position: absolute;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.main .feedback .img-block .avatar:nth-of-type(1) {
+    width: 92px;
+    height: 92px;
+    top: 0;
+    left: 144px;
+}
+.main .feedback .img-block .avatar:nth-of-type(2) {
+    width: 110px;
+    height: 110px;
+    top: 19px;
+    right: 0;
+}
+.main .feedback .img-block .avatar:nth-of-type(3),
+.main .feedback .img-block .avatar:nth-of-type(5),
+.main .feedback .img-block .avatar:nth-of-type(6) {
+    width: 78px;
+    height: 78px;
+}
+
+.main .feedback .img-block .avatar:nth-of-type(3) {
+    left: 0;
+    bottom: 145px;
+}
+.main .feedback .img-block .avatar:nth-of-type(4) {
+    width: 235px;
+    height: 235px;
+    top: 107px;
+    right: 171px;
+}
+.main .feedback .img-block .avatar:nth-of-type(5) {
+    bottom: 0;
+    left: 212px;
+}
+.main .feedback .img-block .avatar:nth-of-type(6) {
+    bottom: 29px;
+    right: 32px;
 }
